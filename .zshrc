@@ -1,5 +1,34 @@
 #PROMPT_SUBST If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+# pnpm
+export PNPM_HOME="/home/serdar/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+#go
+if [ -d "/usr/local/go/bin" ] ; then
+    PATH="/usr/local/go/bin:$PATH"
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+# Turso
+export PATH="/home/serdar/.turso:$PATH"
+
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export CLERK_API_KEY="sk_test_F2xdhOL1F9pMg9jAGyQFsbHjd5HXEwp5BlNR1sA1JP"
+
+
 
 
 HISTSIZE=100000
@@ -25,3 +54,4 @@ bindkey ';5B' history-substring-search-down
 #prompt
 setopt PROMPT_SUBST
 export PROMPT='%F{cyan}󰄛%f %n:%~ %# '
+
