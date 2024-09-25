@@ -26,7 +26,6 @@ export PATH="/home/serdar/.turso:$PATH"
 
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-export CLERK_API_KEY="sk_test_F2xdhOL1F9pMg9jAGyQFsbHjd5HXEwp5BlNR1sA1JP"
 
 
 
