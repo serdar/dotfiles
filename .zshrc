@@ -52,3 +52,8 @@ source ~/.api_keys
 
 #PATH Export
 export PATH=$BUN_INSTALL/bin:$HOME/.turso:$GOROOT/bin:$GOPATH/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+export PATH="$PATH:$HOME/zig"
+. "/Users/serdar/.deno/env"
+
+source <(fzf --zsh)
