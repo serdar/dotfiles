@@ -1,4 +1,4 @@
-general.import = ["/Users/serdar/.config/alacritty/alacritty-gruvbox-dark.toml"]
+general.import = ["./alacritty-gruvbox-dark.toml"]
 
 general.live_config_reload=true
 
@@ -13,7 +13,7 @@ draw_bold_text_with_bright_colors = true
 family = "Cousine Nerd Font"
 
 [font]
-size = 14.0
+size = 9 
 
 [window]
 decorations = "full"
