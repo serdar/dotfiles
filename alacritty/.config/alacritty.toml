@@ -1,6 +1,6 @@
-import = ["/Users/serdar/.config/alacritty/alacritty-gruvbox-dark.toml"]
+general.import = ["/Users/serdar/.config/alacritty/alacritty-gruvbox-dark.toml"]
 
-live_config_reload=true
+general.live_config_reload=true
 
 [bell]
 animation = "EaseOutExpo"
